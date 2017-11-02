@@ -1,0 +1,19 @@
+package chatterbox.aparna.server;
+
+import java.net.*;
+
+public class Server {
+
+  public void createCon(int port) {
+	 try {
+     ServerSocket con = new ServerSocket(port);
+     con.accept();
+	 } catch(IOException e) {
+     System.err.println(" Could not create a connection "+e);
+	 }
+	}
+
+
+
+
+}
